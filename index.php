@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['letra'])) {
 
     // Verificar si la letra ya se ha usado
     if (in_array($letra, $_SESSION['letras_usadas'])) {
-        echo "Ya has usado la letra '$letra'. Intenta con otra.<br>";
+        echo "Ya has usado la letra '$letra'. Intenta  otra.<br>";
     } else {
         // Añadir la letra a las usadas
         $_SESSION['letras_usadas'][] = $letra;
